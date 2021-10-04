@@ -10,13 +10,11 @@
         <img src="#" alt="Логотип интернет магазина Девайс.">
       </a>
       <nav class="navigation">
+        <form class="navigation-search" action="https://echo.htmlacademy.ru" method="GET" name="search">
+          <input type="search" name="seacrh" placeholder="Поиск по сайту">
+          <button type="submit">Поиск по сайту</button>
+        </form>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <form action="https://echo.htmlacademy.ru" name="search" method="GET">
-              <input type="search" name="seacrh" placeholder="Поиск по сайту">
-              <button type="submit">Поиск по сайту</button>
-            </form>
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Войти</a>
           </li>
@@ -212,7 +210,7 @@
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        <form action="https://echo.htmlacademy.ru" name="subscribe" method="POST">
+        <form action="https://echo.htmlacademy.ru" method="POST" name="subscribe">
           <input type="email" name="subscriber" placeholder="Ваш e-mail" required>
           <button type="submit">Подписаться</button>
         </form>

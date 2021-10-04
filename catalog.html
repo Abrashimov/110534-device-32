@@ -6,17 +6,15 @@
   </head>
   <body>
     <header class="page-header">
-      <a>
-        <img src="index.html" alt="Логотип интернет магазина Девайс.">
+      <a href="index.html">
+        <img src="#" alt="Логотип интернет магазина Девайс.">
       </a>
       <nav class="navigation">
+        <form class="navigation-search" action="https://echo.htmlacademy.ru" method="GET" name="search">
+          <input type="search" name="seacrh" placeholder="Поиск по сайту">
+          <button type="submit">Поиск по сайту</button>
+        </form>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <form action="https://echo.htmlacademy.ru" name="search" method="GET">
-              <input type="search" name="seacrh" placeholder="Поиск по сайту">
-              <button type="submit">Поиск по сайту</button>
-            </form>
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Войти</a>
           </li>
@@ -89,12 +87,14 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET" name="filter">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
-            <button class="range-toggle toggle-max">
-              <span class="visually-hidden">Изменить минимальную цену.</span>
-            </button>
-            <button class="range-toggle toggle-max">
-              <span class="visually-hidden">Изменить максимальную цену.</span>
-            </button>
+              <div>
+                <button class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
             <label class="catalog-filter-label">
               от <input class="catalog-filter-input" type="number" name="min-price"> ₽
             </label>
@@ -108,35 +108,30 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="black" checked>
-                  <span class="control-mark"></span>
                   <span class="control-label">Черный</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="white" checked>
-                  <span class="control-mark"></span>
                   <span class="control-label">Белый</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="blue">
-                  <span class="control-mark"></span>
                   <span class="control-label">Синий</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="red">
-                  <span class="control-mark"></span>
                   <span class="control-label">Красный</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="pink">
-                  <span class="control-mark"></span>
                   <span class="control-label">Розовый</span>
                 </label>
               </li>
@@ -148,14 +143,12 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="black" checked>
-                  <span class="control-mark"></span>
                   <span class="control-label">Есть</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="white" >
-                  <span class="control-mark"></span>
                   <span class="control-label">Нет</span>
                 </label>
               </li>
@@ -181,31 +174,31 @@
         <ul class="goods-list">
           <li class="goods-card">
             <a class="goods-card-link" href="#">
-              <img class="goods-card-image" src="#" alt="">
               <h4 class="goods-card-title">Любительская селфи-палка</h4>
+              <img class="goods-card-image" src="#" alt="">
+              <b class="goods-card-price">500 ₽</b>
             </a>
-            <b class="goods-card-price">500 ₽</b>
           </li>
           <li class="goods-card">
             <a class="goods-card-link" href="#">
-              <img class="goods-card-image" src="#" alt="">
               <h4 class="goods-card-title">Профессиональная селфи-палка</h4>
+              <img class="goods-card-image" src="#" alt="">
+              <b class="goods-card-price">1 500 ₽</b>
             </a>
-            <b class="goods-card-price">1 500 ₽</b>
           </li>
           <li class="goods-card">
             <a class="goods-card-link" href="#">
-              <img class="goods-card-image" src="#" alt="">
               <h4 class="goods-card-title">Непотопляемая селфи-палка</h4>
+              <img class="goods-card-image" src="#" alt="">
+              <b class="goods-card-price">2 500 ₽</b>
             </a>
-            <b class="goods-card-price">2 500 ₽</b>
           </li>
           <li class="goods-card">
             <a class="goods-card-link" href="#">
-              <img class="goods-card-image" src="#" alt="">
               <h4 class="goods-card-title">Селфи-палка «Следуй за мной»</h4>
+              <img class="goods-card-image" src="#" alt="">
+              <b class="goods-card-price">4 900 ₽</b>
             </a>
-            <b class="goods-card-price">4 900 ₽</b>
           </li>
         </ul>
         <a class="button" href="#">Загрузить ещё</a>
@@ -235,7 +228,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a>
+      <a href="index.html">
         <img src="#" alt="Логотип интернет магазина Девайс.">
       </a>
       <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
