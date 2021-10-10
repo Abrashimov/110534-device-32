@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -14,7 +15,7 @@
           <input type="search" name="seacrh" placeholder="Поиск по сайту">
           <button type="submit">Поиск по сайту</button>
         </form>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Войти</a>
           </li>
@@ -25,10 +26,10 @@
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
-        <ul>
-          <li>
-            <a href="#">Каталог товаров</a>
-            <ul class="navigation-list">
+        <ul class="navigation-menu">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Каталог товаров</a>
+            <ul class="navigation-category">
               <li class="navigation-item">
                 <a class="navigation-link" href="#">Виртуальная реальность</a>
               </li>
@@ -39,7 +40,7 @@
                 <a class="navigation-link" href="#">Экшн-камеры</a>
               </li>
             </ul>
-            <ul class="navigation-list">
+            <ul class="navigation-category">
               <li class="navigation-item">
                 <a class="navigation-link" href="#">Фитнес-браслеты</a>
               </li>
@@ -47,14 +48,12 @@
                 <a class="navigation-link" href="#">Умные часы</a>
               </li>
             </ul>
-            <ul class="navigation-list">
+            <ul class="navigation-category">
               <li class="navigation-item">
                 <a class="navigation-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </li>
-        </ul>
-        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
           </li>
@@ -69,7 +68,7 @@
     </header>
     <main class="main-inner">
       <header class="inner-header">
-        <h1>Моноподы для селфи</h1>
+        <h1 class="title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -83,7 +82,7 @@
         </ul>
       </header>
       <section class="goods-catalog" aria-label="Список товаров с фильтрами">
-        <h3>Фильтр:</h3>
+        <h3 class="title filter-title" >Фильтр:</h3>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET" name="filter">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
@@ -156,7 +155,7 @@
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
-        <h3>Сортировка:</h3>
+        <h3 class="title sorting-title" >Сортировка:</h3>
         <form class="sotring-type" action="https://echo.htmlacademy.ru/" method="GET" name="sorting">
           <select class="select-control" name="sorting">
             <option value="popular">Сначала популярные</option>
@@ -201,10 +200,10 @@
             </a>
           </li>
         </ul>
-        <a class="button" href="#">Загрузить ещё</a>
+        <a class="button show-more-button" href="#">Загрузить ещё</a>
         <ul class="pagination">
           <li class="pagination-item">
-            <a href="#">Назад</a>
+            <a class="button show-more-button" href="#">Назад</a>
           </li>
           <li class="pagination-item">
             <a href="#">1</a>
@@ -222,7 +221,7 @@
             <a href="#">15</a>
           </li>
           <li class="pagination-item">
-            <a href="#">Вперёд</a>
+            <a class="button show-more-button" href="#">Вперёд</a>
           </li>
         </ul>
       </section>
@@ -231,16 +230,16 @@
       <a href="index.html">
         <img src="img/logo-footer.svg" width="145" height="36" alt="Логотип интернет магазина Девайс.">
       </a>
-      <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      <ul>
-        <li>
-          <a href="#">Доставка</a>
+      <p class="contacts-description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <ul class="navigation-menu">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Доставка</a>
         </li>
-        <li>
-          <a href="#">Гарантия</a>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Гарантия</a>
         </li>
-        <li>
-          <a href="#">Кредит</a>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Кредит</a>
         </li>
       </ul>
       <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
@@ -265,7 +264,7 @@
         </ul>
       </div>
       <a href="https://htmlacademy.ru">
-        <img src="img/logo_htmlacademy.svg" width="115" height="34" alt="Логотип htmlacademy.">
+        <img src="img/logo-htmlacademy.svg" width="115" height="34" alt="Логотип htmlacademy.">
       </a>
     </footer>
   </body>
