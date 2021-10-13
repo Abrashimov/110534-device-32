@@ -30,6 +30,10 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -50,8 +54,12 @@ body {
 }
 
 .button {
-  display: block;
+  display: inline-block;
   color: inherit;
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
+  border: 0;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -60,6 +68,14 @@ body {
 .page-header {
   color: #000000;
   background-color: #FFE17F;
+}
+
+.button-search {
+  padding-left: 36px;
+  background-image: url("../img/icons/search.svg");
+  background-position: left center;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
 }
 
 .navigation-link {
@@ -72,6 +88,29 @@ body {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+}
+
+.navigation-user-link {
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.navigation-user-link-entry {
+  padding-left: 25px;
+  background-image: url("../img/icons/user.svg");
+  background-size: 13px 12px;
+}
+
+.navigation-user-link-compare {
+  padding-left: 20px;
+  background-image: url("../img/icons/compare.svg");
+  background-size: 10px 12px;
+}
+
+.navigation-user-link-cart {
+  padding-left: 26px;
+  background-image: url("../img/icons/cart.svg");
+  background-size: 16px 14px;
 }
 
 .navigation-menu {
@@ -110,12 +149,45 @@ body {
 }
 
 .catalog-list {
+  display: flex;
   line-height: 24px;
+  list-style-type: none;
 }
 
 .catalog-link {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-decoration: none;
   color: #000000;
+  background-color: #FFE17F;
+}
+
+.catalog-link-vr {
+  background-image: url("../img/icons/category-1.svg");
+}
+
+.catalog-link-selfie-stick {
+  background-image: url("../img/icons/category-2.svg");
+}
+
+.catalog-link-camera {
+  background-image: url("../img/icons/category-3.svg");
+}
+
+.catalog-link-fitbit {
+  background-image: url("../img/icons/category-4.svg");
+}
+
+.catalog-link-smartwatch {
+  background-image: url("../img/icons/category-5.svg");
+}
+
+.catalog-link-drone {
+  background-image: url("../img/icons/category-6.svg");
 }
 
 .advantages-item {
@@ -126,6 +198,27 @@ body {
 .advantages-link {
   text-decoration: none;
   color: inherit;
+}
+
+#delivery {
+  background-image: url("../img/icons/delivery-bg.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 136px 164px;
+}
+
+#guarantee {
+  background-image: url("../img/icons/warranty-bg.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 136px 164px;
+}
+
+#credit {
+  background-image: url("../img/icons/credit-bg.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 136px 164px;
 }
 
 .delivery-description {
@@ -275,4 +368,26 @@ body {
 .show-more-button {
   font-size: 16px;
   line-height: 19px;
+}
+
+.social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-link-fb {
+  background-image: url("../img/icons/facebook.svg");
+}
+
+.social-link-insta {
+  background-image: url("../img/icons/instagram.svg");
+}
+
+.social-link-twitter {
+  background-image: url("../img/icons/twitter.svg");
 }
