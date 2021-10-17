@@ -34,7 +34,15 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -43,8 +51,13 @@ body {
   background-color: #FFFFFF;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .container {
-  background-color: #F0F0F0;;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .title {
@@ -70,6 +83,19 @@ body {
   background-color: #FFE17F;
 }
 
+.navigation {
+  width: 1041px;
+  margin: 0 auto;
+}
+
+.navigation-user-menu {
+  display: flex;
+}
+
+.navigation-search {
+  width: 516px;
+}
+
 .button-search {
   padding-left: 36px;
   background-image: url("../img/icons/search.svg");
@@ -84,6 +110,10 @@ body {
 }
 
 .navigation-user {
+  display: flex;
+  width: 501px;
+  margin: 0;
+  padding: 0;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -113,7 +143,10 @@ body {
   background-size: 16px 14px;
 }
 
-.navigation-menu {
+.navigation-main-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
 }
 
@@ -150,8 +183,15 @@ body {
 
 .catalog-list {
   display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   line-height: 24px;
   list-style-type: none;
+}
+
+.catalog-item {
+  width: 160px;
 }
 
 .catalog-link {
@@ -188,6 +228,10 @@ body {
 
 .catalog-link-drone {
   background-image: url("../img/icons/category-6.svg");
+}
+
+.advantages {
+  background-color: #F0F0F0;
 }
 
 .advantages-item {
@@ -241,6 +285,41 @@ body {
   color: inherit;
 }
 
+.contact-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  width: 239px;
+  margin-right: 114px;
+}
+
+.about-us {
+  width: 458px;
+}
+
+.contact {
+  width: 294px;
+  margin-left: auto;
+}
+
+.navigation-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts {
+  width: 560px;
+}
+
 .contacts-subtitle {
   font-family: "Rubik", sans-serif;
   font-size: 24px;
@@ -266,6 +345,10 @@ body {
   font-weight: 700;
 }
 
+.subscribe {
+  background-color:  #F0F0F0;
+}
+
 .subscribe-description {
   font-family: "Rubik", sans-serif;
   line-height: 30px;
@@ -276,6 +359,10 @@ body {
 .page-footer {
   color: #FFFFFF;
   background-color: #444444;
+}
+
+.footer-menu {
+  display: flex;
 }
 
 .page-footer .contacts-description {
