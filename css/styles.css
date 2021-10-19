@@ -61,6 +61,7 @@ body {
 }
 
 .title {
+  margin: 0;
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
@@ -78,14 +79,22 @@ body {
   text-decoration: none;
 }
 
+.logo {
+  display: block;
+  position: absolute;
+  top: -23px;
+}
+
 .page-header {
+  margin-top: 40px;
   color: #000000;
   background-color: #FFE17F;
 }
 
 .navigation {
-  width: 1041px;
-  margin: 0 auto;
+  position: relative;
+  padding: 48px 60px;
+  padding-bottom: 0;
 }
 
 .navigation-user-menu {
@@ -111,6 +120,7 @@ body {
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   width: 501px;
   margin: 0;
   padding: 0;
@@ -118,6 +128,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
+  list-style-type: none;
 }
 
 .navigation-user-link {
@@ -145,9 +156,11 @@ body {
 
 .navigation-main-menu {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .navigation-category {
@@ -156,6 +169,11 @@ body {
   line-height: 18px;
   font-weight: 400;
   text-transform: none;
+  list-style-type: none;
+}
+
+.slider-list {
+  list-style-type: none;
 }
 
 .slide-description {
@@ -183,6 +201,7 @@ body {
 
 .catalog-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
