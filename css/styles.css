@@ -35,10 +35,12 @@
 }
 
 html {
+  width: 100%;
   height: 100%;
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -87,8 +89,10 @@ body {
 
 .page-header {
   margin-top: 40px;
+  margin: 0 auto;
   color: #000000;
   background-color: #FFE17F;
+  width: 1160px;
 }
 
 .navigation {
@@ -292,7 +296,7 @@ body {
 }
 
 .unique-good {
-  background-color: #F0F0F0;;
+  background-color: #F0F0F0;
 }
 
 .unique-good-link {
@@ -401,12 +405,17 @@ body {
   text-align: right;
 }
 
+.inner-header {
+  padding: 38px 60px;
+}
+
 .main-inner {
   color: #000000;
   background-color: #FFFFFF;
 }
 
 .breadcrumbs {
+  list-style-type: none;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -419,22 +428,68 @@ body {
   text-decoration: none;
 }
 
-.filter-title {
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  background-color: #DCDCDC;
+.catalog {
+  display: flex;
 }
-
-.sorting-title {
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  background-color: #EBEBEB;
-}
+/*  */
 
 .catalog-filter {
-  background-color: #EBEBEB;
+  position: relative;
+  width: 328px;
+  z-index: 1;
+}
+
+.catalog-filter::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -2;
+  background-color: #efefef;
+}
+
+.filter-title {
+  position: relative;
+  width: 328px;
+  height: 71px;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.filter-title::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  background-color: #d9d9d9;
+}
+
+.catalog-filter-menu {
+  width: 328px;
+}
+
+.catalog-sorting {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.catalog-sorting::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  background-color: #ebebeb;
 }
 
 .catalog-filter-title {
