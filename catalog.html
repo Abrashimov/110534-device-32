@@ -84,12 +84,12 @@
           </li>
         </ul>
       </header>
-      <section class="catalog container" aria-label="Список товаров с фильтрами">
+      <section class="catalog" aria-label="Список товаров с фильтрами">
         <section class="catalog-filter">
-          <h3 class="title filter-title">Фильтр:</h3>
+          <h3 class="title catalog-filter-title">Фильтр:</h3>
           <form class="catalog-filter-menu" action="https://echo.htmlacademy.ru/" method="GET" name="filter">
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость</legend>
+            <fieldset class="catalog-fieldset">
+              <legend class="catalog-fieldset-title">Стоимость</legend>
                 <div>
                   <button class="range-toggle toggle-max">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -98,41 +98,41 @@
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
-              <label class="catalog-filter-label">
-                от <input class="catalog-filter-input" type="number" name="min-price"> ₽
+              <label class="catalog-fieldset-label">
+                от <input class="catalog-fieldset-input" type="number" name="min-price"> ₽
               </label>
-              <label class="catalog-filter-label">
-                до <input class="catalog-filter-input" type="number" name="max-price"> ₽
+              <label class="catalog-fieldset-label">
+                до <input class="catalog-fieldset-input" type="number" name="max-price"> ₽
               </label>
             </fieldset>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Цвет</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
+            <fieldset class="catalog-fieldset">
+              <legend class="catalog-fieldset-title">Цвет</legend>
+              <ul class="catalog-fieldset-list">
+                <li class="catalog-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="black" checked>
                     <span class="control-label">Черный</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="catalog-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="white" checked>
                     <span class="control-label">Белый</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="catalog-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="blue">
                     <span class="control-label">Синий</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="catalog-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="red">
                     <span class="control-label">Красный</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="catalog-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="pink">
                     <span class="control-label">Розовый</span>
@@ -140,16 +140,16 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Bluetooth</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
+            <fieldset class="catalog-fieldset">
+              <legend class="catalog-fieldset-title">Bluetooth</legend>
+              <ul class="catalog-fieldset-list">
+                <li class="catalog-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="black" checked>
                     <span class="control-label">Есть</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="catalog-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="white" >
                     <span class="control-label">Нет</span>
@@ -211,7 +211,7 @@
           <a class="button show-more-button" href="#">Загрузить ещё</a>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="button show-more-button" href="#">Назад</a>
+              <a class="button button-back" href="#">Назад</a>
             </li>
             <li class="pagination-item">
               <a href="#">1</a>
@@ -229,7 +229,7 @@
               <a href="#">15</a>
             </li>
             <li class="pagination-item">
-              <a class="button show-more-button" href="#">Вперёд</a>
+              <a class="button button-forward" href="#">Вперёд</a>
             </li>
           </ul>
         </section>
